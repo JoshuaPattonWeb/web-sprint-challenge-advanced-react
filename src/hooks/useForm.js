@@ -5,7 +5,7 @@ const useForm = (initialValue) => {
     const [values, setValues] = useState(initialValue)
     const [showSuccessMessage, setShowSuccessMessage] = useState(false)
 
-    const handleChange = (evt) => {
+    const handleChanges = (evt) => {
         setValues({
             ...values,
             [evt.target.name]: evt.target.value
@@ -15,7 +15,7 @@ const useForm = (initialValue) => {
         evt.preventDefault()
         setShowSuccessMessage(true)
     }
-    return [values, handleChange, handleSubmit, showSuccessMessage]
+    return [values, handleChanges, handleSubmit, showSuccessMessage]
 }
 
 export default useForm;
