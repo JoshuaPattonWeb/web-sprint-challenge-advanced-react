@@ -108,9 +108,9 @@ test("displays plants in cart", () => {
 
 ## Submission format
 * [x] Submit via Codegrade by committing and pushing any new changes to **your main branch.**
-* [ ] Check Codegrade before the deadline to compare its results against your local tests.
-* [ ] Check Codegrade on the days following the Sprint Challenge for reviewer feedback. For more information on how to access and read your feedback, check [here](https://www.notion.so/lambdaschool/How-to-View-Feedback-in-CodeGrade-c5147cee220c4044a25de28bcb6bb54a)
-* [ ] New commits will be evaluated by Codegrade if pushed before the sprint challenge deadline.
+* [x] Check Codegrade before the deadline to compare its results against your local tests.
+* [x] Check Codegrade on the days following the Sprint Challenge for reviewer feedback. For more information on how to access and read your feedback, check [here](https://www.notion.so/lambdaschool/How-to-View-Feedback-in-CodeGrade-c5147cee220c4044a25de28bcb6bb54a)
+* [x] New commits will be evaluated by Codegrade if pushed before the sprint challenge deadline.
 
 ## Interview Questions
 
@@ -118,8 +118,20 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What are the main differences between a stateful and a functional component?
 
+  - State components have state and keep track of changing data.
+  - Functional components displays data to the DOM depending on the props/values that are given.
+
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
+ 
+  - ComponentWillMount is called before the initial rendering.
+  - componentWillUpdate is called before it receives new props or states to be updated.
 
 3. Define stateful logic.
 
+  - Stateful logic is and form of code that uses any amount of "hooks of state"
+
 4. What are the three step of creating a successful test? What is done in each phase? 
+
+  - Arrange: Tests are set up by arranging different inputs and targets
+  - Act: Methods used to make sure values are being rendered to the component
+  - Assert: After the value is "rendered" we need to confirm that by running an expect(xx).toBeInTheDocument as validation to what we've inputted to what we have received.
